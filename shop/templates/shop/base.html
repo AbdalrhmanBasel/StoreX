@@ -17,10 +17,23 @@
             <a href="/" class="logo">StoreX</a>
         </div>
 
-        <div id="subheader">
-            <div class="cart">Your cart is empty.</div>
+        <div id="subheader" class="d-flex justify-content-end">
+            {% with total_items=cart|length %}
+                {% if total_items > 0 %}
+                    <span>Your cart:
+                        <a href="{% url "cart:cart_detail" %}">
+                             {{ total_items }} item{{ total_items|pluralize }}
+                            ${{ cart.get_total_price }}
+                        </a>
+                    </span>
+                {% else %}
+                    <span>Your cart: 0 items</span>
+                {% endif %}
+            {% endwith %}
         </div>
-            <div id="content">
+
+
+        <div id="content">
             {% block content %}
             {% endblock %}
         </div>

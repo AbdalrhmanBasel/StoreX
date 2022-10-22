@@ -26,3 +26,7 @@ Functionalities Outline:
         3. Associate shopping carts with users' cookies seasons.
 
 
+BUGS LIST:
+    1. Quantity is not showing in shop/detailed.html
+    2. Props not passed to the cart!
+
