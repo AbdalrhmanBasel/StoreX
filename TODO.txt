@@ -1,32 +1,4 @@
 TODO:
-    1. Implement the highlighted instructions are in page 344. # DONE
-    2. Implement in the highlighted instructions that are in page 347. # DONE
-    3. Implement the highlighted instructions are in page 348. # DONE
-
-
-
-
-QUESTIONS:
-    1. What is Django's Session Framework? When it is used? How it is implemented?
-        - Allow you to store temporary data (cookies) so that you can use it.
-            Ex: using carts in website, you need to store data through cookies.
-        - If user is not logged in, cookies will be lost unless you retrieve them before logging in.
-    2. What does the "del" method?
-    3. What is the __iter__ method?
-    4. What is the object method in python?
-    5. When do we exactly use POST operator?
-
-
-
-
-Functionalities Outline:
-    Carts:
-        1. Set cookies using django cache-based session engine.
-        2. Get product ID, quantity, and it's current price.
-        3. Associate shopping carts with users' cookies seasons.
-
-
-BUGS LIST:
-    1. Quantity is not showing in shop/detailed.html
-    2. Props not passed to the cart!
-
+    1. Shop.
+    2. Cart.
+    3. Authentication.
