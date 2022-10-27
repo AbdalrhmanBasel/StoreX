@@ -26,7 +26,7 @@
                             ${{ cart.get_total_price }}
                         </a>
                     </span>
-                {% else %}
+                {% elif not order %}
                     <span>Your cart: 0 items</span>
                 {% endif %}
             {% endwith %}
